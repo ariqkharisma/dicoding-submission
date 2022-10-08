@@ -80,7 +80,6 @@ header {
 main {
   min-height: calc(100vh - 120px);
   margin-top: 60px;
-  padding-bottom: 60px;
 }
 
 #hero {
@@ -98,6 +97,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 #explore > h1 {
