@@ -80,7 +80,7 @@ header {
 main {
   min-height: calc(100vh - 120px);
   margin-top: 60px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 #hero {
