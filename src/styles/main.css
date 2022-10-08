@@ -42,7 +42,7 @@ header {
 }
 
 .navbar {
-  background-color: var(--cream);
+  background-color: var(--green);
   height: 60px;
   width: 100%;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);  
