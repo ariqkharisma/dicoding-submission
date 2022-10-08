@@ -1,4 +1,8 @@
 @media only screen and (max-width: 992px) {
+    body p {
+      font-size: 1em;
+    }
+
     .restaurants {
       grid-template-columns: auto auto;
     }
