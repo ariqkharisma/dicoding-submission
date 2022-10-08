@@ -7,8 +7,7 @@ class FavoriteRestaurantView {
     return `
       <section id="hero">
         <picture>
-          <source media="(max-width: 600px)" srcset="/images/hero-image-small.jpg">
-          <img class="lazyload" src="/images/hero-image-large.jpg" alt="hero images"/>
+          <img class="lazyload" src="/images/hero-image.jpg" alt="hero images"/>
         </picture>
       </section>
       <section id="explore">

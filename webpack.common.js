@@ -5,7 +5,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const ImageminMozjpeg = require('imagemin-mozjpeg');
 const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
-const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
@@ -67,7 +66,6 @@ module.exports = {
           from: path.resolve(__dirname, 'src/public/'),
           to: path.resolve(__dirname, 'dist/'),
           globOptions: {
-            ignore: ['**/images/**'],
           },
         },
       ],
@@ -90,7 +88,6 @@ module.exports = {
         },
       ],
     }),
-    new BundleAnalyzerPlugin(),
     new WorkboxWebpackPlugin.GenerateSW({
       swDest: './sw.bundle.js',
     }),
