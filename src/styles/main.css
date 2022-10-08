@@ -136,9 +136,11 @@ main {
   grid-template-rows: auto auto auto;
 }
 
-.restaurant-item .restaurant-body h1 {
+.restaurant-item .restaurant-body h1, .restaurant-item .restaurant-body p  {
   font-size: 14px;
 }
+
+
 
 .restaurant-item .restaurant-body > h1, h2, p, a {
   margin-top: 5px;
