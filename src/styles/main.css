@@ -135,7 +135,7 @@ main {
 .restaurant-item .restaurant-body {
   padding: 10px;
   display: grid;
-  grid-template-rows: auto auto 44px;
+  grid-template-rows: auto auto auto;
 }
 
 .restaurant-item .restaurant-body h1 {
