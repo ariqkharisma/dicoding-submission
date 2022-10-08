@@ -116,7 +116,7 @@ main {
   display: grid;
   grid-template-rows: 250px auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+  border: var(--gray) solid 1px;
 }
 
 .restaurant-item .restaurant-image {
