@@ -220,6 +220,7 @@ footer {
   width: 60px;
   height: 60px;
   cursor: pointer;
+  z-index: 950;
 }
 
 
