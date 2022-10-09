@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
 :root {
   --green: #0F3D3E;
   --cream: #E2DCC8;
-  --gray: #F1F1F1;
+  --gray: #f1f1f1;
 }
 
 * {
@@ -11,9 +14,12 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
   text-size-adjust: none;
   -webkit-text-size-adjust: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button, a {
@@ -41,6 +47,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 
 .navbar {
@@ -166,48 +173,78 @@ footer {
 }
 
 #restaurantDetail {
-  padding-top: 10px;
-  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#restaurantDetail .restaurant-detail {
-  max-width: 1100px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1750px;
 }
 
 #restaurantDetail .detail-header {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 45% 55%;
+  min-height: 500px;
 }
 
-#restaurantDetail .detail-header picture img {
+#restaurantDetail .detail-header .detail-image {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #restaurantDetail .detail-header .detail-info {
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 92px;
+  flex-direction: column;
+}
+
+#restaurantDetail .detail-header .detail-info .title {
+  font-size: 72px;
+  font-weight: 600;
+}
+
+#restaurantDetail .detail-header .detail-info a {
+  background-color: var(--cream);
+  width: 150px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#restaurantDetail .detail-header .detail-info .info {
   display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding: 0 20px;
+  position: absolute;
+  right: 2%;
+  left: 47%;
+  top: 450px;
+  background-color: var(--gray);
+  border-radius: 10px;
+  opacity: 0.8;
+  height: 100px;
 }
 
-#restaurantDetail .detail-header .detail-info .detail-title {
-  font-size: 32px;
-  margin-bottom: 20px;
+.detail-info .info .city, .detail-info .info .address, .detail-info .info .rating, .detail-info .info .categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#restaurantDetail .detail-header .detail-info .menu {
+#restaurantDetail .detail-overview {
   display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-#restaurantDetail .detail-header .detail-info .menu li {
-  list-style-type: none;
-  list-style: none;
-}
-
-#restaurantDetail .detail-overview, #restaurantDetail .detail-review {
-  padding: 20px;
+  grid-template-columns: 30% 70%;
+  min-height: 400px;
+  background-color: var(--gray);
+  align-items: center;
+  justify-items: center;
+  padding: 50px;
 }
 
 #likeButton {
@@ -223,7 +260,6 @@ footer {
   width: 60px;
   height: 60px;
   cursor: pointer;
-  z-index: 100;
 }
 
 

@@ -17,42 +17,47 @@ const createRestaurantItemTemplate = (data) => `
 
 const createRestaurantDetailTemplate = (data) => `
   <div class="detail-header">
-    <picture>
-      <img class="detail-image" src=${ENDPOINT.IMG.M}${data.pictureId} alt=${data.name}/>
-    </picture>
     <div class="detail-info">
-      <h1 class="title">${data.name.toUpperCase()}</h1>
+      <h1 class="title">${data.name}</h1>
+      <a>Explore Menu</a>
       <div class="info">
-        <h2>Information</h2>
-        <p>City : ${data.city}</p>
-        <p>Address : ${data.address}</p>
-        <p>Rating : ${data.rating}</p>
-      </div>
-        
-      <div class="categories">
-        <h4>Categories</h4>
-        ${data.categories?.map((category) => `<span>${category.name}</span>`).join(', ')}
-      </div>
-      <div class="menu">
-        <div class="menu-food">
-          <h3>Food</h3>
-          <ul>
-            ${data.menus.foods?.map((food) => `<li>${food.name}</li>`).join('')}
-          </ul>
+        <div class="city">
+          <h4>City</h4>
+          <p>${data.city}</p>
         </div>
-        <div class="menu-drink">
-          <h3>Drink</h3>
-          <ul>
-            ${data.menus.drinks?.map((drink) => `<li>${drink.name}</li>`).join('')}
-          </ul>
+        <div class="address">
+          <h4>Address</h4>
+          <p>${data.address}</p>
+        </div>
+        <div class="rating">
+          <h4>Rating</h4>
+          <p>${data.rating}</p>
+        </div>
+        <div class="categories">
+          <h4>Categories</h4>
+          <p>${data.categories?.map((category) => `<span>${category.name}</span>`).join(', ')}</p>
         </div>
       </div>
     </div>
+    <img class="detail-image" src=${ENDPOINT.IMG.M}${data.pictureId} alt=${data.name}/>
   </div>
-  
   <div class="detail-overview">
-    <h2>Overview</h2>
+    <h1>Overview</h1>
     <p>${data.description}</p>
+  </div>
+  <div class="detail-menu" id="detailMenu">
+    <div class="menu-food">
+      <h3>Food</h3>
+      <ul>
+        ${data.menus.foods?.map((food) => `<li>${food.name}</li>`).join('')}
+      </ul>
+    </div>
+    <div class="menu-drink">
+      <h3>Drink</h3>
+      <ul>
+        ${data.menus.drinks?.map((drink) => `<li>${drink.name}</li>`).join('')}
+      </ul>
+    </div>
   </div>
   <div class="detail-review">
     <h2>Reviews</h2>
@@ -72,7 +77,7 @@ const createLikeRestaurantButtonTemplate = () => `
 
 const createUnlikeRestaurantButtonTemplate = () => `
   <button aria-label="Unfavourite this restaurant" id="likeButton" class="like">
-    <i class="fa-solid fa-heart fa-2xl" style="color: red" aria-hidden="true"></i>
+    <i class="fa-solid fa-heart fa-2xl" style="color: #EC7272" aria-hidden="true"></i>
   </button>
 `;
 

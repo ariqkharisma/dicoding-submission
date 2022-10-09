@@ -3,6 +3,48 @@
     grid-template-columns: repeat(2, 49%);
     column-gap: 2%;
   }
+
+  #restaurantDetail .detail-header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #restaurantDetail .detail-header .detail-image {
+    height: 300px;
+  }
+
+  #restaurantDetail .detail-header .detail-info {
+    align-items: center;
+  }
+
+  #restaurantDetail .detail-header .detail-info .info {
+    left: 10%;
+    right: 10%;
+    top: 300px;
+    padding: 10px;
+  }
+
+  #restaurantDetail .detail-header .detail-info .title {
+    text-align: center;
+  }
+
+  #restaurantDetail .detail-header .detail-info a {
+    display: none;
+  }
+
+  #restaurantDetail .detail-overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #restaurantDetail .detail-overview h1 {
+    margin-bottom: 20px;
+  }
+
+  
 }
   
 @media only screen and (max-width: 576px) {
@@ -22,7 +64,6 @@
     color: white;
     cursor: pointer;
     background: transparent;
-    z-index: 999;
   }
 
   .navbar-nav {
@@ -37,7 +78,6 @@
     padding-top: 70px;
     transition: transform 0.3s ease-in-out;
     background-color: var(--cream);
-    z-index: 998;
   }
 
   .navbar-nav.open {
@@ -49,11 +89,25 @@
     line-height: 50px;
   }
 
-  #restaurantDetail .detail-header {
-    grid-template-columns: auto;
+  #restaurantDetail {
+    width: 100%;
+    max-width: 100vw;
   }
 
-  #restaurantDetail {
-    padding-top: 0;
+  #restaurantDetail .detail-header .detail-info .title {
+    font-size: 46px;
+  }
+
+  #restaurantDetail .detail-header .detail-info {
+    padding-inline: 50px;
+    padding-bottom: 50px;
+  }
+
+  #restaurantDetail .detail-header .detail-info .info {
+    left: 2%;
+    right: 2%;
+    top: 280px;
+    grid-template-columns: auto auto;
+    height: auto;
   }
 }
