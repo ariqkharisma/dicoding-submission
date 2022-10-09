@@ -1,6 +1,7 @@
 @media only screen and (max-width: 992px) {
   .restaurants {
-    grid-template-columns: repeat(2, 45%);
+    grid-template-columns: repeat(2, 49%);
+    gap: 2%;
   }
 }
   
