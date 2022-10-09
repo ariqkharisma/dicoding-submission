@@ -41,15 +41,15 @@
   }
 
   #restaurantDetail .detail-overview h1 {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 
   #restaurantDetail .detail-menu .menu-food h2, #restaurantDetail .detail-menu .menu-drink h2 {
-    width: 275px;
+    width: 280px;
   }
 
   #restaurantDetail .detail-menu .menu-food ul, #restaurantDetail .detail-menu .menu-drink ul {
-    width: 275px;
+    width: 280px;
   }
 }
   
