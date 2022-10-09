@@ -247,6 +247,56 @@ footer {
   padding: 50px;
 }
 
+#restaurantDetail .detail-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+#restaurantDetail .detail-menu h1 {
+  margin: 50px;
+}
+
+#restaurantDetail .detail-menu .menu {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  justify-content: center;
+}
+
+#restaurantDetail .detail-menu .menu-food, #restaurantDetail .detail-menu .menu-drink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#restaurantDetail .detail-menu .menu-food h2, #restaurantDetail .detail-menu .menu-drink h2 {
+  background-color: var(--cream);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 400px;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+#restaurantDetail .detail-menu .menu-food ul, #restaurantDetail .detail-menu .menu-drink ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gray);
+  padding: 20px;
+  width: 400px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+#restaurantDetail .detail-menu .menu-food li, #restaurantDetail .detail-menu .menu-drink li {
+  list-style: none;
+}
+
 #likeButton {
   display: flex;
   justify-content: center;

@@ -46,18 +46,21 @@ const createRestaurantDetailTemplate = (data) => `
     <p>${data.description}</p>
   </div>
   <div class="detail-menu" id="detailMenu">
-    <div class="menu-food">
-      <h3>Food</h3>
-      <ul>
-        ${data.menus.foods?.map((food) => `<li>${food.name}</li>`).join('')}
-      </ul>
-    </div>
-    <div class="menu-drink">
-      <h3>Drink</h3>
-      <ul>
-        ${data.menus.drinks?.map((drink) => `<li>${drink.name}</li>`).join('')}
-      </ul>
-    </div>
+    <h1>Menu</h1>
+    <div class="menu">
+      <div class="menu-food">
+        <h2>Food</h2>
+        <ul>
+          ${data.menus.foods?.map((food) => `<li>${food.name}</li>`).join('')}
+        </ul>
+      </div>
+      <div class="menu-drink">
+        <h2>Drink</h2>
+        <ul>
+          ${data.menus.drinks?.map((drink) => `<li>${drink.name}</li>`).join('')}
+        </ul>
+      </div>
+    </div>    
   </div>
   <div class="detail-review">
     <h2>Reviews</h2>

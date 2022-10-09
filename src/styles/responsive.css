@@ -41,10 +41,16 @@
   }
 
   #restaurantDetail .detail-overview h1 {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
-  
+  #restaurantDetail .detail-menu .menu-food h2, #restaurantDetail .detail-menu .menu-drink h2 {
+    width: 275px;
+  }
+
+  #restaurantDetail .detail-menu .menu-food ul, #restaurantDetail .detail-menu .menu-drink ul {
+    width: 275px;
+  }
 }
   
 @media only screen and (max-width: 576px) {
@@ -110,4 +116,9 @@
     grid-template-columns: auto auto;
     height: auto;
   }
+
+  #restaurantDetail .detail-menu .menu {
+    grid-template-columns: auto;
+    row-gap: 20px;
+  }  
 }
