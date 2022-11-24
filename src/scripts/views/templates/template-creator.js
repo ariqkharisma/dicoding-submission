@@ -19,6 +19,7 @@ const createRestaurantDetailTemplate = (data) => `
   <div class="detail-header">
     <div class="detail-info">
       <h1 class="title">${data.name}</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <a>Explore Menu</a>
       <div class="info">
         <div class="city">
@@ -49,13 +50,13 @@ const createRestaurantDetailTemplate = (data) => `
     <h1>Menu</h1>
     <div class="menu">
       <div class="menu-food">
-        <h2>Food</h2>
+        <h3>Food</h3>
         <ul>
           ${data.menus.foods?.map((food) => `<li>${food.name}</li>`).join('')}
         </ul>
       </div>
       <div class="menu-drink">
-        <h2>Drink</h2>
+        <h3>Drink</h3>
         <ul>
           ${data.menus.drinks?.map((drink) => `<li>${drink.name}</li>`).join('')}
         </ul>
@@ -65,10 +66,12 @@ const createRestaurantDetailTemplate = (data) => `
   <div class="detail-review">
     <h2>Reviews</h2>
     ${data.customerReviews.map((review) => `
-      <p>Oleh ${review.name} : </p>
+    <div class="review-item">
+      <p style="font-weight: 700">${review.name}</p>
       <p>${review.review}</p>
-      <p>Pada ${review.date}</p>
-    `).join('<br>')}
+      <p style="font-size: 12px">${review.date}</p>
+    </div>
+    `).join('')}
   </div>
 `;
 

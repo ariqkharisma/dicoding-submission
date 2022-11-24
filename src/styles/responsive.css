@@ -28,6 +28,10 @@
     text-align: center;
   }
 
+  #restaurantDetail .detail-header .detail-info p {
+    display: none;
+  }
+
   #restaurantDetail .detail-header .detail-info a {
     display: none;
   }
@@ -114,7 +118,7 @@
     row-gap: 20px;
   }  
 
-  #restaurantDetail .detail-menu .menu-food h2, #restaurantDetail .detail-menu .menu-drink h2 {
+  #restaurantDetail .detail-menu .menu-food h3, #restaurantDetail .detail-menu .menu-drink h3 {
     width: 90vw;
   }
 
