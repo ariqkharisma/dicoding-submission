@@ -241,7 +241,7 @@ footer {
   background-color: var(--gray);
   border-radius: 10px;
   opacity: 0.8;
-  min-height: 100px;
+  height: 100px;
 }
 
 .detail-info .info .city, .detail-info .info .address, .detail-info .info .rating, .detail-info .info .categories {
