@@ -19,7 +19,7 @@ const createRestaurantDetailTemplate = (data) => `
   <div class="detail-header">
     <div class="detail-info">
       <h1 class="title">${data.name}</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <a>Explore Menu</a>
       <div class="info">
         <div class="city">
