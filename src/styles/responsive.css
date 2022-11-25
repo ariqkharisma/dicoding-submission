@@ -28,7 +28,7 @@
     text-align: center;
   }
 
-  #restaurantDetail .detail-header .detail-info .description {
+  #restaurantDetail .detail-header .detail-info p.description {
     display: none;
   }
 
