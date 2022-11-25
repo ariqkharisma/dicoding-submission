@@ -215,7 +215,7 @@ footer {
   font-weight: 600;
 }
 
-#restaurantDetail .detail-header .detail-info p {
+#restaurantDetail .detail-header .detail-info p.description {
   margin: 20px 0;
 }
 
