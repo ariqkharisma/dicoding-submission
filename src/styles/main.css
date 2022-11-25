@@ -206,7 +206,7 @@ footer {
 #restaurantDetail .detail-header .detail-info {
   display: flex;
   justify-content: center;
-  padding: 92px;
+  padding: 110px 92px 92px 92px;
   flex-direction: column;
 }
 
