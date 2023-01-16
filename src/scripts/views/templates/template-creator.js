@@ -16,6 +16,7 @@ const createRestaurantItemTemplate = (data) => `
   </div>`;
 
 const createRestaurantDetailTemplate = (data) => `
+<div class="container">
   <div class="detail-header">
     <div class="detail-info">
       <h1 class="title">${data.name}</h1>
@@ -73,6 +74,7 @@ const createRestaurantDetailTemplate = (data) => `
     </div>
     `).join('')}
   </div>
+</div>
 `;
 
 const createLikeRestaurantButtonTemplate = () => `
