@@ -13,26 +13,19 @@
     height: 300px;
   }
 
-  #restaurantDetail .detail-header .detail-info {
+  #restaurantDetail .detail-header .detail-header__left {
     align-items: center;
   }
 
-  #restaurantDetail .detail-header .detail-info .info {
-    left: 10%;
-    right: 10%;
-    top: 300px;
-    padding: 10px;
-  }
-
-  #restaurantDetail .detail-header .detail-info .title {
+  #restaurantDetail .detail-header .detail-header__left .title {
     text-align: center;
   }
 
-  #restaurantDetail .detail-header .detail-info p.description {
+  #restaurantDetail .detail-header .detail-header__left p.description {
     display: none;
   }
 
-  #restaurantDetail .detail-header .detail-info a {
+  #restaurantDetail .detail-header .detail-header__left a {
     display: none;
   }
 
@@ -96,16 +89,18 @@
     max-width: 100vw;
   }
 
-  #restaurantDetail .detail-header .detail-info .title {
+  #restaurantDetail .detail-header .detail-header__left .title {
     font-size: 46px;
   }
 
-  #restaurantDetail .detail-header .detail-info {
+  #restaurantDetail .detail-header .detail-header__left {
     padding-inline: 50px;
     padding-bottom: 50px;
   }
 
-  #restaurantDetail .detail-header .detail-info .info {
+  #restaurantDetail .detail-header .detail-header__right .info {
+    position: absolute;
+    padding: 10px;
     left: 2%;
     right: 2%;
     top: 280px;

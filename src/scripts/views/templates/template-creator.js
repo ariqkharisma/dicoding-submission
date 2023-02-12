@@ -17,10 +17,13 @@ const createRestaurantItemTemplate = (data) => `
 
 const createRestaurantDetailTemplate = (data) => `
   <div class="detail-header">
-    <div class="detail-info">
+    <div class="detail-header__left">
       <h1 class="title">${data.name}</h1>
       <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <a>Explore Menu</a>
+    </div>
+    <div class="detail-header__right">
+      <img class="detail-image" src=${ENDPOINT.IMG.M}${data.pictureId} alt=${data.name}/>
       <div class="info">
         <div class="city">
           <h4>City</h4>
@@ -40,7 +43,6 @@ const createRestaurantDetailTemplate = (data) => `
         </div>
       </div>
     </div>
-    <img class="detail-image" src=${ENDPOINT.IMG.M}${data.pictureId} alt=${data.name}/>
   </div>
   <div class="detail-overview">
     <h1>Overview</h1>
